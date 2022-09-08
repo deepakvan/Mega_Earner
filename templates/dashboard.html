@@ -1,0 +1,18 @@
+{% extends user.isadmin|yesno:"dashboard_template_admin.html,dashboard_template_user.html" %}
+
+{% block title %} DashBoard {% endblock %}
+
+
+{% block username %} {{ user.username }} {% endblock %}
+
+
+{% block header_body %}
+<div>Analytics Dashboard
+    <div class="page-title-subheading">This is a dashboard . </div>
+</div>
+{% endblock %}
+
+{%block mainbody %}
+
+
+{% endblock %}
